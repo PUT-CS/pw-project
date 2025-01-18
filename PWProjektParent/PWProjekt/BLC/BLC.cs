@@ -1,8 +1,8 @@
-﻿using Barski_Lewandowski_Interfaces;
+﻿using Milek_Nowak_Interfaces;
 using Microsoft.Extensions.Configuration;
 using System.Reflection;
 
-namespace Barski_Lewandowski_BLC
+namespace Milek_Nowak_BLC
 {
     public class BLC
     {

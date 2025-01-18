@@ -1,11 +1,11 @@
-﻿using Barski_Lewandowski_Interfaces;
+﻿using Milek_Nowak_Interfaces;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Configuration;
 using System.Windows.Data;
 
 
-namespace Barski_Lewandowski_WindowsApp.ViewModels
+namespace Milek_Nowak_WindowsApp.ViewModels
 {
     public class ListsViewModel: INotifyPropertyChanged
     {
@@ -379,7 +379,7 @@ namespace Barski_Lewandowski_WindowsApp.ViewModels
         public ListsViewModel()
         {
             string libraryName = ConfigurationManager.AppSettings["libraryFile"];
-            _dao = Barski_Lewandowski_BLC.BLC.GetInstance(libraryName).DAO;
+            _dao = Milek_Nowak_BLC.BLC.GetInstance(libraryName).DAO;
 
             _producersVm = new ObservableCollection<ProducerViewModel>();
             _broomsVm = new ObservableCollection<BroomViewModel>();

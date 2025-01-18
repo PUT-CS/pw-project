@@ -1,7 +1,7 @@
-﻿using Barski_Lewandowski_Interfaces;
+﻿using Milek_Nowak_Interfaces;
 using System.ComponentModel.DataAnnotations;
 
-namespace Barski_Lewandowski_DAOMock.BO
+namespace Milek_Nowak_DAOMock.BO
 {
     public class Producer : IProducer
     {

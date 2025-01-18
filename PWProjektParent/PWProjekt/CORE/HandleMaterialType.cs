@@ -1,4 +1,4 @@
-﻿namespace Barski_Lewandowski_Core
+﻿namespace Milek_Nowak_Core
 {
     public enum HandleMaterialType
     {

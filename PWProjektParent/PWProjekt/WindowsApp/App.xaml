@@ -1,7 +1,7 @@
-﻿<Application x:Class="Barski_Lewandowski_WindowsApp.App"
+﻿<Application x:Class="Milek_Nowak_WindowsApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Barski_Lewandowski_WindowsApp"
+             xmlns:local="clr-namespace:Milek_Nowak_WindowsApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Barski_Lewandowski_Interfaces;
+using Milek_Nowak_Interfaces;
 
-namespace Barski_Lewandowski_WebApp.Controllers
+namespace Milek_Nowak_WebApp.Controllers
 {
     public class ProducersController : Controller
     {
         private readonly IDAO _dao;
 
-        public ProducersController(Barski_Lewandowski_BLC.BLC blc)
+        public ProducersController(Milek_Nowak_BLC.BLC blc)
         {
             _dao = blc.DAO;
         }

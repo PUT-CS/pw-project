@@ -1,7 +1,7 @@
-﻿using Barski_Lewandowski_Interfaces;
+﻿using Milek_Nowak_Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Barski_Lewandowski_DAOEF
+namespace Milek_Nowak_DAOEF
 {
     public class DAOSqlite : DbContext, IDAO
     {

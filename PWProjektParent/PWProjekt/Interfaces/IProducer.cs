@@ -1,4 +1,4 @@
-﻿namespace Barski_Lewandowski_Interfaces
+﻿namespace Milek_Nowak_Interfaces
 {
     public interface IProducer
     {

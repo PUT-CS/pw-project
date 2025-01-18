@@ -1,8 +1,8 @@
-﻿using Barski_Lewandowski_Interfaces;
+﻿using Milek_Nowak_Interfaces;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
-namespace Barski_Lewandowski_DAOMock
+namespace Milek_Nowak_DAOMock
 {
     public class DAOMock: IDAO
     {
@@ -36,37 +36,37 @@ namespace Barski_Lewandowski_DAOMock
             BO.Broom broom = new BO.Broom();
             broom.Name = "Super Broom 5000";
             broom.Id = _nextBroomID++;
-            broom.FibersMaterial = Barski_Lewandowski_Core.FibersMaterialType.Słoma;
+            broom.FibersMaterial = Milek_Nowak_Core.FibersMaterialType.Słoma;
             broom.ProducerId = miotlopol.Id;
             broom.Producer = miotlopol;
-            broom.HandleMaterial = Barski_Lewandowski_Core.HandleMaterialType.Aluminium;
+            broom.HandleMaterial = Milek_Nowak_Core.HandleMaterialType.Aluminium;
             broom.Price = 59.99;
             Brooms.Add(broom);
             broom = new BO.Broom();
             broom.Name = "Ultra Broom 9000";
             broom.Id = _nextBroomID++;
-            broom.FibersMaterial = Barski_Lewandowski_Core.FibersMaterialType.Włosie;
+            broom.FibersMaterial = Milek_Nowak_Core.FibersMaterialType.Włosie;
             broom.ProducerId = miotlopol.Id;
             broom.Producer = miotlopol;
-            broom.HandleMaterial = Barski_Lewandowski_Core.HandleMaterialType.Stal;
+            broom.HandleMaterial = Milek_Nowak_Core.HandleMaterialType.Stal;
             broom.Price = 99.99;
             Brooms.Add(broom);
             broom = new BO.Broom();
             broom.Name = "Broom Broom";
-            broom.FibersMaterial = Barski_Lewandowski_Core.FibersMaterialType.Słoma;
+            broom.FibersMaterial = Milek_Nowak_Core.FibersMaterialType.Słoma;
             broom.Id = _nextBroomID++;
             broom.ProducerId = miotlex.Id;
             broom.Producer = miotlex;
-            broom.HandleMaterial = Barski_Lewandowski_Core.HandleMaterialType.Drewno;
+            broom.HandleMaterial = Milek_Nowak_Core.HandleMaterialType.Drewno;
             broom.Price = 9.99;
             Brooms.Add(broom);
             broom = new BO.Broom();
             broom.Name = "Miotła codzienna";
             broom.Id = _nextBroomID++;
-            broom.FibersMaterial = Barski_Lewandowski_Core.FibersMaterialType.Sztuczne;
+            broom.FibersMaterial = Milek_Nowak_Core.FibersMaterialType.Sztuczne;
             broom.ProducerId = miotloplast.Id;
             broom.Producer = miotloplast;
-            broom.HandleMaterial = Barski_Lewandowski_Core.HandleMaterialType.Plastik;
+            broom.HandleMaterial = Milek_Nowak_Core.HandleMaterialType.Plastik;
             broom.Price = 19.99;
             Brooms.Add(broom);
         }

@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace Barski_Lewandowski_WindowsApp
+namespace Milek_Nowak_WindowsApp
 {
     /// <summary>
     /// Interaction logic for App.xaml

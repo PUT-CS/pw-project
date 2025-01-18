@@ -1,17 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Barski_Lewandowski_Interfaces;
-using Barski_Lewandowski_Core;
+using Milek_Nowak_Interfaces;
+using Milek_Nowak_Core;
 using Newtonsoft.Json.Linq;
 
-namespace Barski_Lewandowski_WebApp.Controllers
+namespace Milek_Nowak_WebApp.Controllers
 {
     public class BroomsController : Controller
     {
         private IDAO _dao;
 
-        public BroomsController(Barski_Lewandowski_BLC.BLC blc)
+        public BroomsController(Milek_Nowak_BLC.BLC blc)
         {
             _dao = blc.DAO;
         }

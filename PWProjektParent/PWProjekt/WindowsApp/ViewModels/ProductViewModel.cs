@@ -1,10 +1,10 @@
-﻿using Barski_Lewandowski_Core;
-using Barski_Lewandowski_Interfaces;
+﻿using Milek_Nowak_Core;
+using Milek_Nowak_Interfaces;
 using System.Collections;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Barski_Lewandowski_WindowsApp.ViewModels
+namespace Milek_Nowak_WindowsApp.ViewModels
 {
     public class BroomViewModel : INotifyPropertyChanged, INotifyDataErrorInfo
     {

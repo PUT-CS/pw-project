@@ -1,4 +1,4 @@
-namespace Barski_Lewandowski_WebApp
+namespace Milek_Nowak_WebApp
 {
     public class Program
     {
@@ -8,7 +8,7 @@ namespace Barski_Lewandowski_WebApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddSingleton<Barski_Lewandowski_BLC.BLC>();
+            builder.Services.AddSingleton<Milek_Nowak_BLC.BLC>();
 
             var app = builder.Build();
 

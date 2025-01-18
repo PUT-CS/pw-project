@@ -1,9 +1,9 @@
-﻿using Barski_Lewandowski_Core;
-using Barski_Lewandowski_Interfaces;
+﻿using Milek_Nowak_Core;
+using Milek_Nowak_Interfaces;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Barski_Lewandowski_DAOEF.BO
+namespace Milek_Nowak_DAOEF.BO
 {
     public class Broom : IBroom
     {

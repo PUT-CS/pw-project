@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Barski_Lewandowski_DAOEF.Migrations
+namespace Milek_Nowak_DAOEF.Migrations
 {
     /// <inheritdoc />
     public partial class InitialMigration : Migration

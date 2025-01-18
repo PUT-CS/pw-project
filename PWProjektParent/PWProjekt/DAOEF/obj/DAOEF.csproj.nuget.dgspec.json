@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\DAOEF\\DAOEF.csproj": {}
+    "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\DAOEF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj": {
+    "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj",
+        "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj",
         "packagesPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\CORE\\obj\\",
+        "outputPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\DAOEF\\DAOEF.csproj": {
+    "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\DAOEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\DAOEF\\DAOEF.csproj",
+        "projectUniqueName": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\DAOEF.csproj",
         "projectName": "DAOEF",
-        "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\DAOEF\\DAOEF.csproj",
+        "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\DAOEF.csproj",
         "packagesPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\DAOEF\\obj\\",
+        "outputPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,11 +97,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj": {
-                "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj"
+              "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj": {
+                "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj"
               },
-              "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\Interfaces\\Interfaces.csproj": {
-                "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\Interfaces\\Interfaces.csproj"
+              "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\Interfaces.csproj"
               }
             }
           }
@@ -159,14 +159,14 @@
         }
       }
     },
-    "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\Interfaces\\Interfaces.csproj": {
+    "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\Interfaces\\Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\Interfaces.csproj",
         "projectName": "Interfaces",
-        "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\Interfaces\\Interfaces.csproj",
+        "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\Interfaces.csproj",
         "packagesPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -187,8 +187,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj": {
-                "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj"
+              "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj": {
+                "projectPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\Core.csproj"
               }
             }
           }

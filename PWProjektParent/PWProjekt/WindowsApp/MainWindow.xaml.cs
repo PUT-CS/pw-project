@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using Barski_Lewandowski_WindowsApp.ViewModels;
+using Milek_Nowak_WindowsApp.ViewModels;
 
-namespace Barski_Lewandowski_WindowsApp
+namespace Milek_Nowak_WindowsApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

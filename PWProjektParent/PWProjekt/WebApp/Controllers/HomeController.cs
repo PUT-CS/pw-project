@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using Barski_Lewandowski_WebApp.Models;
+using Milek_Nowak_WebApp.Models;
 
-namespace Barski_Lewandowski_WebApp.Controllers
+namespace Milek_Nowak_WebApp.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,4 +1,4 @@
-namespace Barski_Lewandowski_WebApp.Models
+namespace Milek_Nowak_WebApp.Models
 {
     public class ErrorViewModel
     {

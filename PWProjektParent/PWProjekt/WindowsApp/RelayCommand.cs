@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace Barski_Lewandowski_WindowsApp
+namespace Milek_Nowak_WindowsApp
 {
     public class RelayCommand : ICommand
     {

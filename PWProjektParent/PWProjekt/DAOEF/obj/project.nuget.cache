@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vs30rRyuesE=",
+  "dgSpecHash": "CZn6Vcn2bqs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\DAOEF\\DAOEF.csproj",
+  "projectFilePath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\DAOEF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sebno.DESKTOP-CP5LO9F\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\sebno.DESKTOP-CP5LO9F\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

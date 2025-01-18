@@ -1,6 +1,6 @@
-﻿using Barski_Lewandowski_Core;
+﻿using Milek_Nowak_Core;
 
-namespace Barski_Lewandowski_Interfaces
+namespace Milek_Nowak_Interfaces
 {
     public interface IBroom
     {

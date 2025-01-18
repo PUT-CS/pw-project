@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JGYZU83B0zU=",
+  "dgSpecHash": "H9LRz1vfFR0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\WindowsApp\\WindowsApp.csproj",
+  "projectFilePath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\WindowsApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sebno.DESKTOP-CP5LO9F\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.11\\microsoft.data.sqlite.core.8.0.11.nupkg.sha512",
     "C:\\Users\\sebno.DESKTOP-CP5LO9F\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.11\\microsoft.entityframeworkcore.8.0.11.nupkg.sha512",

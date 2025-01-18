@@ -1,15 +1,15 @@
-﻿using Barski_Lewandowski_Interfaces;
-using Barski_Lewandowski_Core;
+﻿using Milek_Nowak_Interfaces;
+using Milek_Nowak_Core;
 using System.Configuration;
 
-namespace Barski_Lewandowski_ConsoleApp
+namespace Milek_Nowak_ConsoleApp
 {
     public class Program
     {
         static void Main(string[] args)
         {
             string libraryName = ConfigurationManager.AppSettings["libraryFile"];
-            IDAO dao = Barski_Lewandowski_BLC.BLC.GetInstance(libraryName).DAO;
+            IDAO dao = Milek_Nowak_BLC.BLC.GetInstance(libraryName).DAO;
 
             Console.WriteLine("Hello World!");
 
