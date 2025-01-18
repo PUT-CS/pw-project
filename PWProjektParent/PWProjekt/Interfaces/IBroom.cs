@@ -8,7 +8,7 @@ namespace Milek_Nowak_Interfaces
         string Name { get; set; }
         double Price { get; set; }
         IProducer Producer { get; set; }
-        HandleMaterialType HandleMaterial { get; set; }
-        FibersMaterialType FibersMaterial { get; set; }
+        GameTheme HandleMaterial { get; set; }
+        GameType FibersMaterial { get; set; }
     }
 }

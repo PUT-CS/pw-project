@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2874FA8E-080A-41FC-8DB3-DE0DDD63ACBE}|ConsoleApp\\ConsoleApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\consoleapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{2874FA8E-080A-41FC-8DB3-DE0DDD63ACBE}|ConsoleApp\\ConsoleApp.csproj|solutionrelative:consoleapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\daoef\\migrations\\daosqlitemodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|solutionrelative:daoef\\migrations\\daosqlitemodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2874FA8E-080A-41FC-8DB3-DE0DDD63ACBE}|ConsoleApp\\ConsoleApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2874FA8E-080A-41FC-8DB3-DE0DDD63ACBE}|ConsoleApp\\ConsoleApp.csproj|solutionrelative:consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\daoef\\migrations\\20250108201427_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|solutionrelative:daoef\\migrations\\20250108201427_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\daoef\\migrations\\20250108201427_initialmigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|solutionrelative:daoef\\migrations\\20250108201427_initialmigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\daoef\\bo\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|solutionrelative:daoef\\bo\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\daoef\\bo\\producer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|solutionrelative:daoef\\bo\\producer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\ConsoleApp\\App.config",
-              "RelativeDocumentMoniker": "ConsoleApp\\App.config",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\ConsoleApp\\App.config",
-              "RelativeToolTip": "ConsoleApp\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-01-18T14:55:56.528Z",
+              "Title": "DAOSqliteModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations\\DAOSqliteModelSnapshot.cs",
+              "RelativeDocumentMoniker": "DAOEF\\Migrations\\DAOSqliteModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations\\DAOSqliteModelSnapshot.cs",
+              "RelativeToolTip": "DAOEF\\Migrations\\DAOSqliteModelSnapshot.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:45:44.283Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\ConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleApp\\Program.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\ConsoleApp\\Program.cs",
-              "RelativeToolTip": "ConsoleApp\\Program.cs",
+              "Title": "20250108201427_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations\\20250108201427_InitialMigration.cs",
+              "RelativeDocumentMoniker": "DAOEF\\Migrations\\20250108201427_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations\\20250108201427_InitialMigration.cs",
+              "RelativeToolTip": "DAOEF\\Migrations\\20250108201427_InitialMigration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T14:55:55.599Z",
+              "WhenOpened": "2025-01-18T16:45:48.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250108201427_InitialMigration.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations\\20250108201427_InitialMigration.Designer.cs",
+              "RelativeDocumentMoniker": "DAOEF\\Migrations\\20250108201427_InitialMigration.Designer.cs",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations\\20250108201427_InitialMigration.Designer.cs",
+              "RelativeToolTip": "DAOEF\\Migrations\\20250108201427_InitialMigration.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:45:21.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Producer.cs",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\BO\\Producer.cs",
+              "RelativeDocumentMoniker": "DAOEF\\BO\\Producer.cs",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\BO\\Producer.cs",
+              "RelativeToolTip": "DAOEF\\BO\\Producer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:33:07.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\BO\\Game.cs",
+              "RelativeDocumentMoniker": "DAOEF\\BO\\Game.cs",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\BO\\Game.cs",
+              "RelativeToolTip": "DAOEF\\BO\\Game.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T16:16:27.123Z",
               "EditorCaption": ""
             }
           ]

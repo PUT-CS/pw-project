@@ -1,5 +1,5 @@
 ﻿WindowsApp
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\sebno.DESKTOP-CP5LO9F\Desktop\pw-project\PWProjektParent\PWProjekt\WindowsApp\App.xaml
 11407045341
 
-8-908099508
+10-211251248
 220-919431934
 MainWindow.xaml;
 
-False
+True
 

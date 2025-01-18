@@ -67,8 +67,8 @@ namespace Milek_Nowak_WebApp.Controllers
             broom.Name = name;
             broom.Price = Math.Round(price, 2);
             broom.Producer = _dao.GetAllProducers().First(p => p.Id == producerId);
-            broom.HandleMaterial = (HandleMaterialType)handleMaterial;
-            broom.FibersMaterial = (FibersMaterialType)fibersMaterial;
+            broom.HandleMaterial = (GameTheme)handleMaterial;
+            broom.FibersMaterial = (GameType)fibersMaterial;
 
             ModelState.Clear();
             TryValidateModel(broom);
@@ -119,8 +119,8 @@ namespace Milek_Nowak_WebApp.Controllers
             broomTmp.Name = name;
             broomTmp.Price = Math.Round(price, 2);
             broomTmp.Producer = _dao.GetAllProducers().First(p => p.Id == producerId);
-            broomTmp.HandleMaterial = (HandleMaterialType)handleMaterial;
-            broomTmp.FibersMaterial = (FibersMaterialType)fibersMaterial;
+            broomTmp.HandleMaterial = (GameTheme)handleMaterial;
+            broomTmp.FibersMaterial = (GameType)fibersMaterial;
 
             ModelState.Clear();
             TryValidateModel(broomTmp);

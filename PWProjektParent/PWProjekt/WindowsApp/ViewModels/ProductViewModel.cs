@@ -82,7 +82,7 @@ namespace Milek_Nowak_WindowsApp.ViewModels
         }
 
         [Required(ErrorMessage = "Materiał trzonka jest wymagany")]
-        public HandleMaterialType HandleMaterial
+        public GameTheme HandleMaterial
         {
             get => _broom.HandleMaterial;
             set
@@ -93,7 +93,7 @@ namespace Milek_Nowak_WindowsApp.ViewModels
             }
         }
         [Required(ErrorMessage = "Materiał włosia jest wymagany")]
-        public FibersMaterialType FibersMaterial
+        public GameType FibersMaterial
         {
             get => _broom.FibersMaterial;
             set

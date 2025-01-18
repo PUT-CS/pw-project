@@ -17,43 +17,43 @@ namespace Milek_Nowak_ConsoleApp
             {
                 dao.RemoveProducer(p);
             }
-            foreach(IBroom p in dao.GetAllBrooms())
+            foreach(IGame p in dao.GetAllGames())
             {
-                dao.RemoveBroom(p);
+                dao.RemoveGame(p);
             }
 
             IProducer producer1 = dao.CreateNewProducer();
             producer1.Name = "producer 1";
             dao.AddProducer(producer1);
 
-            IBroom broom1 = dao.CreateNewBroom();
-            broom1.Name = "broom 1";
-            broom1.Producer = producer1;
-            broom1.HandleMaterial = HandleMaterialType.Drewno;
-            dao.AddBroom(broom1);
+            IGame game1 = dao.CreateNewGame();
+            game1.Name = "game 1";
+            game1.Producer = producer1;
+            game1.GameTheme = GameTheme.Western;
+            dao.AddGame(game1);
 
-            IBroom broom2 = dao.CreateNewBroom();
-            broom2.Name = "broom 2";
-            broom2.Producer = producer1;
-            broom2.HandleMaterial = HandleMaterialType.Aluminium;
-            dao.AddBroom(broom2);
+            IGame game2 = dao.CreateNewGame();
+            game2.Name = "game 2";
+            game2.Producer = producer1;
+            game2.GameTheme = GameTheme.Fantasy;
+            dao.AddGame(game2);
 
 
             IProducer producer2 = dao.CreateNewProducer();
             producer2.Name = "producer 2";
             dao.AddProducer(producer2);
 
-            IBroom broom3 = dao.CreateNewBroom();
-            broom3.Name = "broom 3";
-            broom3.Producer = producer2;
-            broom3.HandleMaterial = HandleMaterialType.Stal;
-            dao.AddBroom(broom3);
+            IGame game3 = dao.CreateNewGame();
+            game3.Name = "game 3";
+            game3.Producer = producer2;
+            game3.GameTheme = GameTheme.Cyberpunk;
+            dao.AddGame(game3);
 
-            IBroom broom4 = dao.CreateNewBroom();
-            broom4.Name = "broom 4";
-            broom4.Producer = producer2;
-            broom4.HandleMaterial = HandleMaterialType.Plastik;
-            dao.AddBroom(broom4);
+            IGame game4 = dao.CreateNewGame();
+            game4.Name = "game 4";
+            game4.Producer = producer2;
+            game4.GameTheme = GameTheme.Medieval;
+            dao.AddGame(game4);
 
             dao.SaveChanges();
 
@@ -65,8 +65,8 @@ namespace Milek_Nowak_ConsoleApp
                 Console.WriteLine($"{p.Id}: {p.Name}");
             }
 
-            Console.WriteLine("\n** broomS ** \n");
-            foreach (IBroom c in dao.GetAllBrooms())
+            Console.WriteLine("\n** gameS ** \n");
+            foreach (IGame c in dao.GetAllGames())
             {
                 Console.WriteLine($"{c.Id}: {c.Name}, {c.Producer.Name}");
             }

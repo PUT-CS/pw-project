@@ -6,19 +6,18 @@ namespace Milek_Nowak_DAOEF
     public class DAOSqlite : DbContext, IDAO
     {
         public DbSet<BO.Producer> Producers { get; set; }
-        public DbSet<BO.Broom> Brooms { get; set; }
+        public DbSet<BO.Game> Games { get; set; }
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //TODO: do pliku?????????
-            optionsBuilder.UseSqlite(@"Filename=C:\Users\sebno.DESKTOP-CP5LO9F\Desktop\Projekt-Wizualne\DAOEF\brooms.db");
+            optionsBuilder.UseSqlite(@"Filename=C:\Users\sebno.DESKTOP-CP5LO9F\Desktop\pw-project\PWProjektParent\PWProjekt\DAOEF\games.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<BO.Broom>()
+            modelBuilder.Entity<BO.Game>()
                 .HasOne(c => c.Producer)
-                .WithMany(p => p.Brooms)
+                .WithMany(p => p.Games)
                 .HasForeignKey(c => c.ProducerId)
                 .IsRequired();
         }
@@ -29,10 +28,10 @@ namespace Milek_Nowak_DAOEF
             Producers.Add(p);
         }
 
-        public void AddBroom(IBroom broom)
+        public void AddGame(IGame game)
         {
-            BO.Broom p = broom as BO.Broom;
-            Brooms.Add(p);
+            BO.Game p = game as BO.Game;
+            Games.Add(p);
         }
 
         public IProducer CreateNewProducer()
@@ -40,9 +39,9 @@ namespace Milek_Nowak_DAOEF
             return new BO.Producer();
         }
 
-        public IBroom CreateNewBroom()
+        public IGame CreateNewGame()
         {
-            return new BO.Broom();
+            return new BO.Game();
         }
 
         public IEnumerable<IProducer> GetAllProducers()
@@ -50,9 +49,9 @@ namespace Milek_Nowak_DAOEF
             return Producers;
         }
 
-        public IEnumerable<IBroom> GetAllBrooms()
+        public IEnumerable<IGame> GetAllGames()
         {
-            return Brooms.Include("Producer").ToList();
+            return Games.Include("Producer").ToList();
         }
 
         public void RemoveProducer(IProducer producer)
@@ -60,9 +59,9 @@ namespace Milek_Nowak_DAOEF
             Producers.Remove(producer as BO.Producer);
         }
 
-        public void RemoveBroom(IBroom broom)
+        public void RemoveGame(IGame game)
         {
-            Brooms.Remove(broom as BO.Broom);
+            Games.Remove(game as BO.Game);
         }
 
         public void UpdateProducer(IProducer producer)
@@ -70,7 +69,7 @@ namespace Milek_Nowak_DAOEF
             throw new NotImplementedException();
         }
 
-        public void UpdateBroom(IBroom broom)
+        public void UpdateGame(IGame game)
         {
             throw new NotImplementedException();
         }

@@ -16,8 +16,8 @@ namespace Milek_Nowak_DAOEF.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
-                    Country = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
+                    Name = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
+                    Country = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
                     PhoneNumber = table.Column<string>(type: "TEXT", maxLength: 25, nullable: false)
                 },
                 constraints: table =>
@@ -26,7 +26,7 @@ namespace Milek_Nowak_DAOEF.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Brooms",
+                name: "Games",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
@@ -34,14 +34,14 @@ namespace Milek_Nowak_DAOEF.Migrations
                     Name = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
                     Price = table.Column<double>(type: "REAL", nullable: false),
                     ProducerId = table.Column<int>(type: "INTEGER", nullable: false),
-                    HandleMaterial = table.Column<int>(type: "INTEGER", nullable: false),
-                    FibersMaterial = table.Column<int>(type: "INTEGER", nullable: false)
+                    GameTheme = table.Column<int>(type: "INTEGER", nullable: false),
+                    GameType = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Brooms", x => x.Id);
+                    table.PrimaryKey("PK_Games", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Brooms_Producers_ProducerId",
+                        name: "FK_Games_Producers_ProducerId",
                         column: x => x.ProducerId,
                         principalTable: "Producers",
                         principalColumn: "Id",
@@ -49,8 +49,8 @@ namespace Milek_Nowak_DAOEF.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Brooms_ProducerId",
-                table: "Brooms",
+                name: "IX_Games_ProducerId",
+                table: "Games",
                 column: "ProducerId");
         }
 
@@ -58,7 +58,7 @@ namespace Milek_Nowak_DAOEF.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Brooms");
+                name: "Games");
 
             migrationBuilder.DropTable(
                 name: "Producers");

@@ -6,14 +6,14 @@ namespace Milek_Nowak_DAOEF.BO
     public class Producer : IProducer
     {
         public int Id { get; set; }
-        [StringLength(100, ErrorMessage = "Nazwa nie może być dłuższa niż 100 znaków")]
+        [StringLength(50, ErrorMessage = "Name cannot be longer than 50 characters")]
         public string Name { get; set; }
-        [StringLength(100, ErrorMessage = "Nazwa kraju nie może być dłuższa niż 100 znaków")]
+        [StringLength(50, ErrorMessage = "Country name cannot be longer than 50 characters")]
         public string Country { get; set; } = string.Empty;
-        [RegularExpression(@"^\+?[0-9\s]*$", ErrorMessage = "Numer telefonu może składać się tylko z cyfr i spacji oraz może zaczynać się od plusa")]
-        [StringLength(25, ErrorMessage = "Numer telefonu nie może być dłuższy niż 25 znaków")]
-        public string PhoneNumber { get; set; } = "+48123123123";
+        [RegularExpression(@"^\+?[0-9\s]*$", ErrorMessage = "Telephone number can only contain digits, spaces and can begin from a plus")]
+        [StringLength(25, ErrorMessage = "Telephone number cannot be longer than 25 characters")]
+        public string PhoneNumber { get; set; } = "+48 123 456 789";
 
-        public List<Broom> Brooms;
+        public List<Game> Games;
     }
 }

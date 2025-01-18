@@ -6,69 +6,69 @@ namespace Milek_Nowak_DAOMock
 {
     public class DAOMock: IDAO
     {
-        private int _nextBroomID = 1;
+        private int _nextGameID = 1;
         private int _nextProducerID = 1;
         public List<BO.Producer> Producers { get; set; }
-        public List<BO.Broom> Brooms { get; set; }
+        public List<BO.Game> Games { get; set; }
 
         public DAOMock()
         { 
             Producers = new List<BO.Producer>();
-            BO.Producer miotlopol = new BO.Producer();
-            miotlopol.Id = _nextProducerID++;
-            miotlopol.Name = "MITŁOPOL";
-            miotlopol.PhoneNumber = "111 111 123";
-            miotlopol.Country = "Polska";
-            Producers.Add(miotlopol);
-            BO.Producer miotlex = new BO.Producer();
-            miotlex.Id = _nextProducerID++;
-            miotlex.Name = "MIOTŁEX";
-            miotlex.PhoneNumber = "111 111 124";
-            miotlex.Country = "Polska";
-            Producers.Add(miotlex);
-            BO.Producer miotloplast = new BO.Producer();
-            miotloplast.Id = _nextProducerID++;
-            miotloplast.Name = "MITŁOPLAST";
-            miotloplast.PhoneNumber = "111 111 125";
-            miotloplast.Country = "Polska";
-            Producers.Add(miotloplast);
-            Brooms = new List<BO.Broom>();
-            BO.Broom broom = new BO.Broom();
-            broom.Name = "Super Broom 5000";
-            broom.Id = _nextBroomID++;
-            broom.FibersMaterial = Milek_Nowak_Core.FibersMaterialType.Słoma;
-            broom.ProducerId = miotlopol.Id;
-            broom.Producer = miotlopol;
-            broom.HandleMaterial = Milek_Nowak_Core.HandleMaterialType.Aluminium;
-            broom.Price = 59.99;
-            Brooms.Add(broom);
-            broom = new BO.Broom();
-            broom.Name = "Ultra Broom 9000";
-            broom.Id = _nextBroomID++;
-            broom.FibersMaterial = Milek_Nowak_Core.FibersMaterialType.Włosie;
-            broom.ProducerId = miotlopol.Id;
-            broom.Producer = miotlopol;
-            broom.HandleMaterial = Milek_Nowak_Core.HandleMaterialType.Stal;
-            broom.Price = 99.99;
-            Brooms.Add(broom);
-            broom = new BO.Broom();
-            broom.Name = "Broom Broom";
-            broom.FibersMaterial = Milek_Nowak_Core.FibersMaterialType.Słoma;
-            broom.Id = _nextBroomID++;
-            broom.ProducerId = miotlex.Id;
-            broom.Producer = miotlex;
-            broom.HandleMaterial = Milek_Nowak_Core.HandleMaterialType.Drewno;
-            broom.Price = 9.99;
-            Brooms.Add(broom);
-            broom = new BO.Broom();
-            broom.Name = "Miotła codzienna";
-            broom.Id = _nextBroomID++;
-            broom.FibersMaterial = Milek_Nowak_Core.FibersMaterialType.Sztuczne;
-            broom.ProducerId = miotloplast.Id;
-            broom.Producer = miotloplast;
-            broom.HandleMaterial = Milek_Nowak_Core.HandleMaterialType.Plastik;
-            broom.Price = 19.99;
-            Brooms.Add(broom);
+            BO.Producer nentendo = new BO.Producer();
+            nentendo.Id = _nextProducerID++;
+            nentendo.Name = "Nentendo";
+            nentendo.PhoneNumber = "733 797 268";
+            nentendo.Country = "Japan";
+            Producers.Add(nentendo);
+            BO.Producer cdprojektgreen = new BO.Producer();
+            cdprojektgreen.Id = _nextProducerID++;
+            cdprojektgreen.Name = "CD Projekt Green";
+            cdprojektgreen.PhoneNumber = "213 742 555";
+            cdprojektgreen.Country = "Poland";
+            Producers.Add(cdprojektgreen);
+            BO.Producer triangleenix = new BO.Producer();
+            triangleenix.Id = _nextProducerID++;
+            triangleenix.Name = "Triangle Enix";
+            triangleenix.PhoneNumber = "333 444 555";
+            triangleenix.Country = "Japan";
+            Producers.Add(triangleenix);
+            Games = new List<BO.Game>();
+            BO.Game game = new BO.Game();
+            game.Name = "Super Smash Sisters";
+            game.Id = _nextGameID++;
+            game.GameType = Milek_Nowak_Core.GameType.Action;
+            game.ProducerId = nentendo.Id;
+            game.Producer = nentendo;
+            game.GameTheme = Milek_Nowak_Core.GameTheme.Fantasy;
+            game.Price = 59.99;
+            Games.Add(game);
+            game = new BO.Game();
+            game.Name = "Super Mario Bike 8";
+            game.Id = _nextGameID++;
+            game.GameType = Milek_Nowak_Core.GameType.Action;
+            game.ProducerId = nentendo.Id;
+            game.Producer = nentendo;
+            game.GameTheme = Milek_Nowak_Core.GameTheme.Fantasy;
+            game.Price = 99.99;
+            Games.Add(game);
+            game = new BO.Game();
+            game.Name = "Der Hexer";
+            game.GameType = Milek_Nowak_Core.GameType.Strategy;
+            game.Id = _nextGameID++;
+            game.ProducerId = cdprojektgreen.Id;
+            game.Producer = cdprojektgreen;
+            game.GameTheme = Milek_Nowak_Core.GameTheme.Medieval;
+            game.Price = 9.99;
+            Games.Add(game);
+            game = new BO.Game();
+            game.Name = "Deus Ex";
+            game.Id = _nextGameID++;
+            game.GameType = Milek_Nowak_Core.GameType.FPS;
+            game.ProducerId = triangleenix.Id;
+            game.Producer = triangleenix;
+            game.GameTheme = Milek_Nowak_Core.GameTheme.Cyberpunk;
+            game.Price = 19.99;
+            Games.Add(game);
         }
 
         public void AddProducer(IProducer producer)
@@ -78,11 +78,11 @@ namespace Milek_Nowak_DAOMock
             Producers.Add(p);
         }
 
-        public void AddBroom(IBroom broom)
+        public void AddGame(IGame game)
         {
-            BO.Broom p = broom as BO.Broom;
-            p.Id = _nextBroomID++ ;
-            Brooms.Add(p);
+            BO.Game p = game as BO.Game;
+            p.Id = _nextGameID++ ;
+            Games.Add(p);
         }
 
         public IProducer CreateNewProducer()
@@ -90,9 +90,9 @@ namespace Milek_Nowak_DAOMock
             return new BO.Producer();
         }
 
-        public IBroom CreateNewBroom()
+        public IGame CreateNewGame()
         {
-            return new BO.Broom();
+            return new BO.Game();
         }
 
         public IEnumerable<IProducer> GetAllProducers()
@@ -100,9 +100,9 @@ namespace Milek_Nowak_DAOMock
             return Producers;
         }
 
-        public IEnumerable<IBroom> GetAllBrooms()
+        public IEnumerable<IGame> GetAllGames()
         {
-            return Brooms;
+            return Games;
         }
 
         public void RemoveProducer(IProducer producer)
@@ -110,9 +110,9 @@ namespace Milek_Nowak_DAOMock
             Producers.Remove(producer as BO.Producer);
         }
 
-        public void RemoveBroom(IBroom broom)
+        public void RemoveGame(IGame game)
         {
-            Brooms.Remove(broom as BO.Broom);
+            Games.Remove(game as BO.Game);
         }
 
         public void UpdateProducer(IProducer producer)
@@ -120,7 +120,7 @@ namespace Milek_Nowak_DAOMock
             throw new NotImplementedException();
         }
 
-        public void UpdateBroom(IBroom broom)
+        public void UpdateGame(IGame game)
         {
             throw new NotImplementedException();
         }
