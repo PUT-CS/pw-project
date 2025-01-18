@@ -1,0 +1,188 @@
+﻿<Window x:Class="Barski_Lewandowski_WindowsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Barski_Lewandowski_WindowsApp"
+        xmlns:interfaces="clr-namespace:Barski_Lewandowski_Interfaces;assembly=Interfaces"
+        xmlns:core="clr-namespace:Barski_Lewandowski_Core;assembly=Core"
+        xmlns:system="clr-namespace:System;assembly=netstandard"
+        mc:Ignorable="d"
+        Title="Sklep Z Miotłami" Height="450" Width="800"
+        
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mvvm="http://www.galasoft.ch/mvvmlight"
+        >
+    <Window.Resources>
+        <ObjectDataProvider x:Key="HandleMaterialDP"
+                            ObjectType="{x:Type system:Enum}"
+                            MethodName="GetValues">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type Type="{x:Type core:HandleMaterialType}"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <ObjectDataProvider x:Key="FibersMaterialDP"
+                    ObjectType="{x:Type system:Enum}"
+                    MethodName="GetValues">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type Type="{x:Type core:FibersMaterialType}"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+
+        <Style x:Key="TextBoxWithErrors" TargetType="{x:Type TextBox}">
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <DockPanel LastChildFill="True">
+                            <ListBox DockPanel.Dock="Bottom" Name="lstErrors" ItemsSource="{Binding ElementName=ErrComponent, Path=AdornedElement.(Validation.Errors)}">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ErrorContent}" Foreground="Orange" FontSize="9pt"/>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <TextBlock DockPanel.Dock="Right" Foreground="Red" FontWeight="Bold" Margin="5">!</TextBlock>
+                            <TextBlock DockPanel.Dock="Left" Text="{Binding ElementName=lstErrors, Path=ItemsSource.Count}" Margin="5"/>
+                            <Border BorderBrush="DarkBlue" BorderThickness="4">
+                                <AdornedElementPlaceholder Name="ErrComponent"/>
+                            </Border>
+                        </DockPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="Margin" Value="10 10 20 40"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <TabControl>
+        
+        <!-- Tab for Brooms -->
+        <TabItem Header="Brooms" Name ="BroomPanel">
+            <DockPanel>
+                <!-- Broom List -->
+                <ListBox x:Name="lista" DockPanel.Dock="Left" ItemsSource="{Binding BroomsVm}"
+                         SelectedItem="{Binding SelectedBroom}"
+                         MinWidth="100">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderThickness="2" BorderBrush="Black">
+                                <StackPanel MinWidth="95">
+                                    <TextBlock Text="{Binding Id}" Margin="2"/>
+                                    <TextBlock Text="{Binding Name}" Margin="2"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom">
+                    <Button Content="Dodaj nową miotłę" Command="{Binding AddNewBroomCommand}" Margin="5"/>
+                    <Button Content="Zapisz miotłę" Command="{Binding SaveBroomCommand}" Margin="5"/>
+                    <Button Content="Anuluj" Command="{Binding UndoBroomsChangesCommand}" Margin="5"/>
+                    <TextBox MinWidth="80" Text="{Binding BroomsFilter}"/>
+                    <Button Content="Wyszukaj" Command="{Binding FilterBroomsDataCommand}" Margin="5"/>
+                    <Button Content="Usuń" Command="{Binding DeleteBroomCommand}" Margin="5"/>
+                </StackPanel>
+                <!-- Broom Info -->
+                <StackPanel>
+                    <Grid Background="Aqua" DataContext="{Binding EditedBroom}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Column="0" Grid.Row="0">Id</Label>
+                        <!-- <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Id}" Style="{StaticResource TextBoxWithErrors}"></TextBox>-->
+                        <TextBlock Background="White" Grid.Column="1" Grid.Row="0" Text="{Binding Id}"></TextBlock>
+                        
+                        <Label Grid.Column="0" Grid.Row="1">Nazwa</Label>
+                        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Name}" Style="{StaticResource TextBoxWithErrors}"></TextBox>
+
+                        <Label Grid.Column="0" Grid.Row="2">Cena</Label>
+                        <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Price}" Style="{StaticResource TextBoxWithErrors}"></TextBox>
+
+                        <Label Grid.Column="0" Grid.Row="3">Producent</Label>
+                        <ComboBox Grid.Column="1" Grid.Row="3" ItemsSource="{Binding ElementName=BroomPanel, Path=DataContext.Producers}" DisplayMemberPath="Name" SelectedItem="{Binding Producer}"/>
+
+                        <Label Grid.Column="0" Grid.Row="4">Materiał trzonka</Label>
+                        <ComboBox  Grid.Column="1" Grid.Row="4" 
+                           ItemsSource="{Binding Source={StaticResource HandleMaterialDP}}"
+                           Text="{Binding HandleMaterial}"></ComboBox>
+
+                        <Label Grid.Column="0" Grid.Row="5">Materiał włosia</Label>
+                        <ComboBox  Grid.Column="1" Grid.Row="5" 
+                           ItemsSource="{Binding Source={StaticResource FibersMaterialDP}}"
+                           Text="{Binding FibersMaterial}"></ComboBox>
+                        
+
+                    </Grid>
+                </StackPanel>
+            </DockPanel>
+        </TabItem>
+
+        <!-- Tab for Producers -->
+        <TabItem Header="Producers">
+            <DockPanel>
+                <!-- Producer List -->
+                <ListBox x:Name="producersList" DockPanel.Dock="Left" ItemsSource="{Binding ProducersVm}"
+                         SelectedItem="{Binding SelectedProducer}"
+                         MinWidth="100">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderThickness="2" BorderBrush="Black">
+                                <StackPanel MinWidth="95">
+                                    <TextBlock Text="{Binding Id}" Margin="2"/>
+                                    <TextBlock Text="{Binding Name}" Margin="2"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom">
+                    <Button Content="Dodaj producenta" Command="{Binding AddNewProducerCommand}" Margin="5"/>
+                    <Button Content="Zapisz producenta" Command="{Binding SaveProducerCommand}" Margin="5"/>
+                    <Button Content="Anuluj" Command="{Binding UndoProducersChangesCommand}" Margin="5"/>
+                    <TextBox MinWidth="80" Text="{Binding ProducersFilter}"/>
+                    <Button Content="Wyszukaj" Command="{Binding FilterProducersDataCommand}" Margin="5"/>
+                    <Button Content="Usuń" Command="{Binding DeleteProducerCommand}" Margin="5"/>
+                </StackPanel>
+                <!-- Producer Info -->
+                <StackPanel>
+                    <Grid Background="Aqua" DataContext="{Binding EditedProducer}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Column="0" Grid.Row="0">Id</Label>
+                        <!-- <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Id}" Style="{StaticResource TextBoxWithErrors}"></TextBox> -->
+                        <TextBlock Background="White" Grid.Column="1" Grid.Row="0" Text="{Binding Id}"></TextBlock>
+                        <Label Grid.Column="0" Grid.Row="1">Nazwa</Label>
+                        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Name}" Style="{StaticResource TextBoxWithErrors}"></TextBox>
+                        <Label Grid.Column="0" Grid.Row="2">Kraj</Label>
+                        <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Country}" Style="{StaticResource TextBoxWithErrors}"></TextBox>
+                        <Label Grid.Column="0" Grid.Row="3">Numer Telefonu</Label>
+                        <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding PhoneNumber}" Style="{StaticResource TextBoxWithErrors}"></TextBox>
+                    </Grid>
+                </StackPanel>
+            </DockPanel>
+        </TabItem>
+    </TabControl>
+</Window>

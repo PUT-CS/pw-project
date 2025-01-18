@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "pbZp0fKBDno=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\PWProjektParent\\PWProjekt\\BLC\\BLC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sebno.DESKTOP-CP5LO9F\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\sebno.DESKTOP-CP5LO9F\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.2\\microsoft.extensions.configuration.binder.8.0.2.nupkg.sha512",
+    "C:\\Users\\sebno.DESKTOP-CP5LO9F\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

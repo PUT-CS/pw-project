@@ -1,0 +1,48 @@
+﻿@model Barski_Lewandowski_Interfaces.IBroom
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Szczegóły</h1>
+
+<div>
+    <h4>Miotła</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Nazwa
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            Cena
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+            Producent
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Producer.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            Materiał styliska
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HandleMaterial)
+        </dd>
+        <dt class = "col-sm-2">
+            Materiał aparatu czyszczącego
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FibersMaterial)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edytuj</a> |
+    <a asp-action="Index">Powróć do listy</a>
+</div>
