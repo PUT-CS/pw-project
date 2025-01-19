@@ -3,10 +3,11 @@
     "",
     "\\PWProjektParent",
     "\\PWProjektParent\\PWProjekt",
-    "\\PWProjektParent\\PWProjekt\\DAOEF",
-    "\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations",
-    "\\PWProjektParent\\PWProjekt\\WindowsApp"
+    "\\PWProjektParent\\PWProjekt\\WebApp",
+    "\\PWProjektParent\\PWProjekt\\WebApp\\Controllers",
+    "\\PWProjektParent\\PWProjekt\\WebApp\\Views",
+    "\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games"
   ],
-  "SelectedNode": "\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations\\20250108201427_InitialMigration.cs",
+  "SelectedNode": "\\PWProjektParent\\PWProjekt\\WebApp\\Controllers\\GamesController.cs",
   "PreviewInSolutionExplorer": false
 }

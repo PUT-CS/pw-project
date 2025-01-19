@@ -6,17 +6,14 @@ namespace Milek_Nowak_WebApp
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddSingleton<Milek_Nowak_BLC.BLC>();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for broomion scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -29,7 +26,7 @@ namespace Milek_Nowak_WebApp
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Brooms}/{action=Index}/{id?}");
+                pattern: "{controller=Games}/{action=Index}/{id?}");
 
             app.Run();
         }

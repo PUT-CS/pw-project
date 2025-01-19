@@ -1,40 +1,40 @@
-﻿@model IEnumerable<Milek_Nowak_Interfaces.IBroom>
+﻿@model IEnumerable<Milek_Nowak_Interfaces.IGame>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Miotły</h1>
+<h1>Games</h1>
 
 
 
 <p>
-    <a asp-action="Create">Dodaj miotłę</a>
+    <a asp-action="Create">Add a game</a>
     <form method="get" asp-action="Index">
         <div class="form-group">
-            <label for="SearchQuery">Wyszukaj:</label>
-            <input type="text" id="SearchQuery" name="searchQuery" class="form-control" placeholder="Podaj nazwę" value="@ViewData["SearchQuery"]" />
+            <label for="SearchQuery">Search:</label>
+            <input type="text" id="SearchQuery" name="searchQuery" class="form-control" placeholder="Name" value="@ViewData["SearchQuery"]" />
         </div>
-        <button type="submit" class="btn btn-primary">Wyszukaj</button>
+        <button type="submit" class="btn btn-primary">Search</button>
     </form>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                Nazwa
+                Name
             </th>
             <th>
-                Cena
+                Price
             </th>
             <th>
-                Producent
+                Producer
             </th>
             <th>
-                Materiał styliska
+                Game Theme
             </th>
             <th>
-                Materiał aparatu czyszczącego
+                Game Type
             </th>
             <th></th>
         </tr>
@@ -52,15 +52,15 @@
                 @Html.DisplayFor(modelItem => item.Producer.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.HandleMaterial)
+                @Html.DisplayFor(modelItem => item.GameTheme)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.FibersMaterial)
+                @Html.DisplayFor(modelItem => item.GameType)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edytuj</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

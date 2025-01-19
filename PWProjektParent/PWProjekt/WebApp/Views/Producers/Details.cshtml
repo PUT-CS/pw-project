@@ -4,28 +4,28 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Szczegóły</h1>
+<h1>Details</h1>
 
 <div>
-    <h4>Producent</h4>
+    <h4>Producer</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            Nazwa
+            Name
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
 
         <dt class="col-sm-2">
-            Kraj
+            Country
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Country)
         </dd>
 
         <dt class="col-sm-2">
-            Numer telefonu
+            Telephone Number
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.PhoneNumber)
@@ -33,6 +33,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edytuj</a> |
-    <a asp-action="Index">Powróć do listy</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Return to the list view</a>
 </div>

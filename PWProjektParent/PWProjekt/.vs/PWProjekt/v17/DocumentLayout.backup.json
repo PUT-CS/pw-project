@@ -3,72 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1924D841-CF62-401D-A948-D43C1ED7C562}|Interfaces\\Interfaces.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\interfaces\\idao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1924D841-CF62-401D-A948-D43C1ED7C562}|Interfaces\\Interfaces.csproj|solutionrelative:interfaces\\idao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\daoef\\daosqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|solutionrelative:daoef\\daosqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\daoef\\migrations\\20250108201427_initialmigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F54ABB02-2411-4DC7-8DF9-FA048AFBFC38}|DAOEF\\DAOEF.csproj|solutionrelative:daoef\\migrations\\20250108201427_initialmigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2874FA8E-080A-41FC-8DB3-DE0DDD63ACBE}|ConsoleApp\\ConsoleApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2874FA8E-080A-41FC-8DB3-DE0DDD63ACBE}|ConsoleApp\\ConsoleApp.csproj|solutionrelative:consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\views\\games\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\games\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\windowsapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|solutionrelative:windowsapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\windowsapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|solutionrelative:windowsapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\windowsapp\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|solutionrelative:windowsapp\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\views\\games\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\games\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\windowsapp\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|solutionrelative:windowsapp\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\views\\games\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\games\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\windowsapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|solutionrelative:windowsapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\views\\games\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\games\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\windowsapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|solutionrelative:windowsapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\views\\games\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\games\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\windowsapp\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|solutionrelative:windowsapp\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1924D841-CF62-401D-A948-D43C1ED7C562}|Interfaces\\Interfaces.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\interfaces\\iproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1924D841-CF62-401D-A948-D43C1ED7C562}|Interfaces\\Interfaces.csproj|solutionrelative:interfaces\\iproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C9EA712-C218-4DB6-BB99-C2958BB8FA51}|CORE\\Core.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\core\\gametheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C9EA712-C218-4DB6-BB99-C2958BB8FA51}|CORE\\Core.csproj|solutionrelative:core\\gametheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C9EA712-C218-4DB6-BB99-C2958BB8FA51}|CORE\\Core.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\core\\gametype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C9EA712-C218-4DB6-BB99-C2958BB8FA51}|CORE\\Core.csproj|solutionrelative:core\\gametype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1924D841-CF62-401D-A948-D43C1ED7C562}|Interfaces\\Interfaces.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\interfaces\\igame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1924D841-CF62-401D-A948-D43C1ED7C562}|Interfaces\\Interfaces.csproj|solutionrelative:interfaces\\igame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\windowsapp\\viewmodels\\producerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|solutionrelative:windowsapp\\viewmodels\\producerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\windowsapp\\viewmodels\\listsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|solutionrelative:windowsapp\\viewmodels\\listsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\windowsapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7F62E16-592B-47D0-B818-7CB928E40F13}|WindowsApp\\WindowsApp.csproj|solutionrelative:windowsapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|c:\\users\\sebno.desktop-cp5lo9f\\desktop\\pw-project\\pwprojektparent\\pwprojekt\\webapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6C47809-F43D-4AAF-8137-3387218C2C22}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -83,221 +67,163 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DAOSqlite.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\DAOSqlite.cs",
-              "RelativeDocumentMoniker": "DAOEF\\DAOSqlite.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\DAOSqlite.cs",
-              "RelativeToolTip": "DAOEF\\DAOSqlite.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20250108201427_InitialMigration.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations\\20250108201427_InitialMigration.Designer.cs",
+              "RelativeDocumentMoniker": "DAOEF\\Migrations\\20250108201427_InitialMigration.Designer.cs",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations\\20250108201427_InitialMigration.Designer.cs",
+              "RelativeToolTip": "DAOEF\\Migrations\\20250108201427_InitialMigration.Designer.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAADMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T18:32:32.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\ConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleApp\\Program.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\ConsoleApp\\Program.cs",
-              "RelativeToolTip": "ConsoleApp\\Program.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAgwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T18:19:03.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IProducer.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\IProducer.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IProducer.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\IProducer.cs",
-              "RelativeToolTip": "Interfaces\\IProducer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:54:06.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\ViewModels\\ProductViewModel.cs",
-              "RelativeDocumentMoniker": "WindowsApp\\ViewModels\\ProductViewModel.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\ViewModels\\ProductViewModel.cs",
-              "RelativeToolTip": "WindowsApp\\ViewModels\\ProductViewModel.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAIAwwG8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:50:15.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\App.config",
-              "RelativeDocumentMoniker": "WindowsApp\\App.config",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\App.config",
-              "RelativeToolTip": "WindowsApp\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-01-19T17:45:23.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\App.xaml",
-              "RelativeDocumentMoniker": "WindowsApp\\App.xaml",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\App.xaml",
-              "RelativeToolTip": "WindowsApp\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-19T17:42:00.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "WindowsApp\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\AssemblyInfo.cs",
-              "RelativeToolTip": "WindowsApp\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:43:09.348Z",
+              "WhenOpened": "2025-01-19T20:40:03.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "WindowsApp\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\MainWindow.xaml",
-              "RelativeToolTip": "WindowsApp\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-19T17:43:12.828Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "WebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Program.cs",
+              "RelativeToolTip": "WebApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T20:31:56.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WindowsApp\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\MainWindow.xaml.cs",
-              "RelativeToolTip": "WindowsApp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAvwBkAAAAAAAAAAAAAAA==",
+              "Title": "GamesController.cs",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Controllers\\GamesController.cs",
+              "RelativeDocumentMoniker": "WebApp\\Controllers\\GamesController.cs",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Controllers\\GamesController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\GamesController.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAuwEwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:47:03.341Z",
+              "WhenOpened": "2025-01-19T20:03:03.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Games\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games\\Delete.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Games\\Delete.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T20:00:44.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Games\\Details.cshtml",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games\\Details.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Games\\Details.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:59:36.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Games\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games\\Edit.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Games\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:57:11.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Games\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games\\Index.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Games\\Index.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwCYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:55:34.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\RelayCommand.cs",
-              "RelativeDocumentMoniker": "WindowsApp\\RelayCommand.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\RelayCommand.cs",
-              "RelativeToolTip": "WindowsApp\\RelayCommand.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:42:41.555Z",
-              "EditorCaption": ""
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Games\\Create.cshtml",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games\\Create.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Games\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:53:08.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:42:08.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:42:05.75Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IDAO.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\IDAO.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IDAO.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\IDAO.cs",
-              "RelativeToolTip": "Interfaces\\IDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:45:04.898Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:38:56.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "GameTheme.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\GameTheme.cs",
-              "RelativeDocumentMoniker": "CORE\\GameTheme.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\GameTheme.cs",
-              "RelativeToolTip": "CORE\\GameTheme.cs",
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:54:20.481Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:38:53.399Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "GameType.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\GameType.cs",
-              "RelativeDocumentMoniker": "CORE\\GameType.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\CORE\\GameType.cs",
-              "RelativeToolTip": "CORE\\GameType.cs",
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WebApp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:54:21.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IGame.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\IGame.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IGame.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\Interfaces\\IGame.cs",
-              "RelativeToolTip": "Interfaces\\IGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:45:15.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ProducerViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\ViewModels\\ProducerViewModel.cs",
-              "RelativeDocumentMoniker": "WindowsApp\\ViewModels\\ProducerViewModel.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\ViewModels\\ProducerViewModel.cs",
-              "RelativeToolTip": "WindowsApp\\ViewModels\\ProducerViewModel.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:50:08.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ListsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\ViewModels\\ListsViewModel.cs",
-              "RelativeDocumentMoniker": "WindowsApp\\ViewModels\\ListsViewModel.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\ViewModels\\ListsViewModel.cs",
-              "RelativeToolTip": "WindowsApp\\ViewModels\\ListsViewModel.cs",
-              "ViewState": "AgIAAH0BAAAAAAAAAAAcwNsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:47:46.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\App.xaml.cs",
-              "RelativeDocumentMoniker": "WindowsApp\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\sebno.DESKTOP-CP5LO9F\\Desktop\\pw-project\\PWProjektParent\\PWProjekt\\WindowsApp\\App.xaml.cs",
-              "RelativeToolTip": "WindowsApp\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:47:52.633Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-19T19:38:50.516Z"
             }
           ]
         }

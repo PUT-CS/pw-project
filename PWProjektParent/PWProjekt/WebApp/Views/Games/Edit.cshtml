@@ -1,51 +1,52 @@
-﻿@model Milek_Nowak_Interfaces.IBroom
+﻿@model Milek_Nowak_Interfaces.IGame
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Edit";
 }
 
-<h1>Utwórz</h1>
+<h1>Edytuj</h1>
 
 <h4>Miotła</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="Name" class="control-label">Nazwa</label>
+                <label asp-for="Name" class="control-label">Name</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Price" class="control-label">Cena</label>
+                <label asp-for="Price" class="control-label">Price</label>
                 <input type="number" asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">Producent</label>
-                <select name="ProducerId" class ="form-control" asp-items="ViewBag.Producers"></select>
+                <label class="control-label">Producer</label>
+                <select name="ProducerId" class="form-control" asp-items="ViewBag.Producers"></select>
                 <span asp-validation-for="Producer" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="HandleMaterial" class="control-label">Materiał styliska</label>
-                <select asp-for="HandleMaterial" class="form-control" asp-items="Html.GetEnumSelectList<Milek_Nowak_Core.GameTheme>()"></select>
+                <label asp-for="GameTheme" class="control-label">Game Theme</label>
+                <select asp-for="GameTheme" class="form-control" asp-items="Html.GetEnumSelectList<Milek_Nowak_Core.GameTheme>()"></select>
                 <span asp-validation-foHandlenum" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FibersMaterial" class="control-label">Materiał aparatu czyszczącego</label>
-                <select asp-for="FibersMaterial" class="form-control" asp-items="Html.GetEnumSelectList<Milek_Nowak_Core.GameType>()"></select>
+                <label asp-for="GameType" class="control-label">Game Type</label>
+                <select asp-for="GameType" class="form-control" asp-items="Html.GetEnumSelectList<Milek_Nowak_Core.GameType>()"></select>
                 <span asp-validation-foHandlenum" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Utwórz" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Powróć do listy</a>
+    <a asp-action="Index">Return to the list view</a>
 </div>
 
 @section Scripts {
