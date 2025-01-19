@@ -8,24 +8,24 @@
         xmlns:core="clr-namespace:Milek_Nowak_Core;assembly=Core"
         xmlns:system="clr-namespace:System;assembly=netstandard"
         mc:Ignorable="d"
-        Title="Sklep Z Miotłami" Height="450" Width="800"
+        Title="Games shop" Height="600" Width="800"
         
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:mvvm="http://www.galasoft.ch/mvvmlight"
         >
     <Window.Resources>
-        <ObjectDataProvider x:Key="HandleMaterialDP"
+        <ObjectDataProvider x:Key="GameThemeDP"
                             ObjectType="{x:Type system:Enum}"
                             MethodName="GetValues">
             <ObjectDataProvider.MethodParameters>
-                <x:Type Type="{x:Type core:HandleMaterialType}"/>
+                <x:Type Type="{x:Type core:GameTheme}"/>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
-        <ObjectDataProvider x:Key="FibersMaterialDP"
+        <ObjectDataProvider x:Key="GameTypeDP"
                     ObjectType="{x:Type system:Enum}"
                     MethodName="GetValues">
             <ObjectDataProvider.MethodParameters>
-                <x:Type Type="{x:Type core:FibersMaterialType}"/>
+                <x:Type Type="{x:Type core:GameType}"/>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
 
@@ -60,36 +60,31 @@
 
     <TabControl>
         
-        <!-- Tab for Brooms -->
-        <TabItem Header="Brooms" Name ="BroomPanel">
+        <TabItem Header="Games" Name ="GamePanel">
             <DockPanel>
-                <!-- Broom List -->
-                <ListBox x:Name="lista" DockPanel.Dock="Left" ItemsSource="{Binding BroomsVm}"
-                         SelectedItem="{Binding SelectedBroom}"
+                <ListBox x:Name="lista" DockPanel.Dock="Left" ItemsSource="{Binding GamesVm}"
+                         SelectedItem="{Binding SelectedGame}"
                          MinWidth="100">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <Border BorderThickness="2" BorderBrush="Black">
+                            <Border BorderThickness="2" BorderBrush="LightGray">
                                 <StackPanel MinWidth="95">
-                                    <TextBlock Text="{Binding Id}" Margin="2"/>
                                     <TextBlock Text="{Binding Name}" Margin="2"/>
                                 </StackPanel>
                             </Border>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
-                <!-- Buttons -->
                 <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom">
-                    <Button Content="Dodaj nową miotłę" Command="{Binding AddNewBroomCommand}" Margin="5"/>
-                    <Button Content="Zapisz miotłę" Command="{Binding SaveBroomCommand}" Margin="5"/>
-                    <Button Content="Anuluj" Command="{Binding UndoBroomsChangesCommand}" Margin="5"/>
-                    <TextBox MinWidth="80" Text="{Binding BroomsFilter}"/>
-                    <Button Content="Wyszukaj" Command="{Binding FilterBroomsDataCommand}" Margin="5"/>
-                    <Button Content="Usuń" Command="{Binding DeleteBroomCommand}" Margin="5"/>
+                    <Button Content="Add new game" Command="{Binding AddNewGameCommand}" Margin="5" Click="Button_Click"/>
+                    <Button Content="Save game" Command="{Binding SaveGameCommand}" Margin="5"/>
+                    <Button Content="Cancel" Command="{Binding UndoGamesChangesCommand}" Margin="5"/>
+                    <Button Content="Search" Command="{Binding FilterGamesDataCommand}" Margin="5"/>
+                    <Button Content="Delete" Command="{Binding DeleteGameCommand}" Margin="5"/>
+                    <TextBox MinWidth="150" Text="{Binding GamesFilter}"/>
                 </StackPanel>
-                <!-- Broom Info -->
                 <StackPanel>
-                    <Grid Background="Aqua" DataContext="{Binding EditedBroom}">
+                    <Grid Background="DarkGray" DataContext="{Binding EditedGame}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"/>
                             <ColumnDefinition Width="3*"/>
@@ -103,27 +98,26 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <Label Grid.Column="0" Grid.Row="0">Id</Label>
-                        <!-- <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Id}" Style="{StaticResource TextBoxWithErrors}"></TextBox>-->
                         <TextBlock Background="White" Grid.Column="1" Grid.Row="0" Text="{Binding Id}"></TextBlock>
-                        
-                        <Label Grid.Column="0" Grid.Row="1">Nazwa</Label>
+
+                        <Label Grid.Column="0" Grid.Row="1" Content="Name"/>
                         <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Name}" Style="{StaticResource TextBoxWithErrors}"></TextBox>
 
-                        <Label Grid.Column="0" Grid.Row="2">Cena</Label>
+                        <Label Grid.Column="0" Grid.Row="2" Content="Price"/>
                         <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Price}" Style="{StaticResource TextBoxWithErrors}"></TextBox>
 
-                        <Label Grid.Column="0" Grid.Row="3">Producent</Label>
-                        <ComboBox Grid.Column="1" Grid.Row="3" ItemsSource="{Binding ElementName=BroomPanel, Path=DataContext.Producers}" DisplayMemberPath="Name" SelectedItem="{Binding Producer}"/>
+                        <Label Grid.Column="0" Grid.Row="3" Content="Producer"/>
+                        <ComboBox Grid.Column="1" Grid.Row="3" ItemsSource="{Binding ElementName=GamePanel, Path=DataContext.Producers}" DisplayMemberPath="Name" SelectedItem="{Binding Producer}"/>
 
-                        <Label Grid.Column="0" Grid.Row="4">Materiał trzonka</Label>
+                        <Label Grid.Column="0" Grid.Row="4" Content="Game Theme"/>
                         <ComboBox  Grid.Column="1" Grid.Row="4" 
-                           ItemsSource="{Binding Source={StaticResource HandleMaterialDP}}"
-                           Text="{Binding HandleMaterial}"></ComboBox>
+                           ItemsSource="{Binding Source={StaticResource GameThemeDP}}"
+                           Text="{Binding GameTheme}"></ComboBox>
 
-                        <Label Grid.Column="0" Grid.Row="5">Materiał włosia</Label>
+                        <Label Grid.Column="0" Grid.Row="5" Content="Game Type"/>
                         <ComboBox  Grid.Column="1" Grid.Row="5" 
-                           ItemsSource="{Binding Source={StaticResource FibersMaterialDP}}"
-                           Text="{Binding FibersMaterial}"></ComboBox>
+                           ItemsSource="{Binding Source={StaticResource GameTypeDP}}"
+                           Text="{Binding GameType}"></ComboBox>
                         
 
                     </Grid>
@@ -131,36 +125,31 @@
             </DockPanel>
         </TabItem>
 
-        <!-- Tab for Producers -->
         <TabItem Header="Producers">
             <DockPanel>
-                <!-- Producer List -->
                 <ListBox x:Name="producersList" DockPanel.Dock="Left" ItemsSource="{Binding ProducersVm}"
                          SelectedItem="{Binding SelectedProducer}"
                          MinWidth="100">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <Border BorderThickness="2" BorderBrush="Black">
+                            <Border BorderThickness="2" BorderBrush="LightGray">
                                 <StackPanel MinWidth="95">
-                                    <TextBlock Text="{Binding Id}" Margin="2"/>
                                     <TextBlock Text="{Binding Name}" Margin="2"/>
                                 </StackPanel>
                             </Border>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
-                <!-- Buttons -->
                 <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom">
-                    <Button Content="Dodaj producenta" Command="{Binding AddNewProducerCommand}" Margin="5"/>
-                    <Button Content="Zapisz producenta" Command="{Binding SaveProducerCommand}" Margin="5"/>
-                    <Button Content="Anuluj" Command="{Binding UndoProducersChangesCommand}" Margin="5"/>
-                    <TextBox MinWidth="80" Text="{Binding ProducersFilter}"/>
-                    <Button Content="Wyszukaj" Command="{Binding FilterProducersDataCommand}" Margin="5"/>
-                    <Button Content="Usuń" Command="{Binding DeleteProducerCommand}" Margin="5"/>
+                    <Button Content="Add producer" Command="{Binding AddNewProducerCommand}" Margin="5"/>
+                    <Button Content="Save producer" Command="{Binding SaveProducerCommand}" Margin="5"/>
+                    <Button Content="Cancel" Command="{Binding UndoProducersChangesCommand}" Margin="5"/>
+                    <Button Content="Search" Command="{Binding FilterProducersDataCommand}" Margin="5"/>
+                    <Button Content="Delete" Command="{Binding DeleteProducerCommand}" Margin="5"/>
+                    <TextBox MinWidth="150" Text="{Binding ProducersFilter}"/>
                 </StackPanel>
-                <!-- Producer Info -->
                 <StackPanel>
-                    <Grid Background="Aqua" DataContext="{Binding EditedProducer}">
+                    <Grid Background="DarkGray" DataContext="{Binding EditedProducer}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"/>
                             <ColumnDefinition Width="3*"/>
@@ -172,13 +161,12 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <Label Grid.Column="0" Grid.Row="0">Id</Label>
-                        <!-- <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Id}" Style="{StaticResource TextBoxWithErrors}"></TextBox> -->
                         <TextBlock Background="White" Grid.Column="1" Grid.Row="0" Text="{Binding Id}"></TextBlock>
-                        <Label Grid.Column="0" Grid.Row="1">Nazwa</Label>
+                        <Label Grid.Column="0" Grid.Row="1" Content="Name"/>
                         <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Name}" Style="{StaticResource TextBoxWithErrors}"></TextBox>
-                        <Label Grid.Column="0" Grid.Row="2">Kraj</Label>
+                        <Label Grid.Column="0" Grid.Row="2" Content="Country"/>
                         <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Country}" Style="{StaticResource TextBoxWithErrors}"></TextBox>
-                        <Label Grid.Column="0" Grid.Row="3">Numer Telefonu</Label>
+                        <Label Grid.Column="0" Grid.Row="3" Content="Telephone Number"/>
                         <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding PhoneNumber}" Style="{StaticResource TextBoxWithErrors}"></TextBox>
                     </Grid>
                 </StackPanel>

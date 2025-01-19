@@ -20,5 +20,10 @@ namespace Milek_Nowak_WindowsApp
             */
             DataContext = new ListsViewModel();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

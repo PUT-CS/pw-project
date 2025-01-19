@@ -11,8 +11,6 @@ namespace Milek_Nowak_ConsoleApp
             string libraryName = ConfigurationManager.AppSettings["libraryFile"];
             IDAO dao = Milek_Nowak_BLC.BLC.GetInstance(libraryName).DAO;
 
-            Console.WriteLine("Hello World!");
-
             foreach (IProducer p in dao.GetAllProducers())
             {
                 dao.RemoveProducer(p);
@@ -22,55 +20,61 @@ namespace Milek_Nowak_ConsoleApp
                 dao.RemoveGame(p);
             }
 
-            IProducer producer1 = dao.CreateNewProducer();
-            producer1.Name = "producer 1";
-            dao.AddProducer(producer1);
+            IProducer nentendo = dao.CreateNewProducer();
+            nentendo.Name = "Nentendo";
+            nentendo.Country = "Japan";
+            nentendo.PhoneNumber = "+03 1234-5678";
+            dao.AddProducer(nentendo);
 
-            IGame game1 = dao.CreateNewGame();
-            game1.Name = "game 1";
-            game1.Producer = producer1;
-            game1.GameTheme = GameTheme.Western;
-            dao.AddGame(game1);
+            IGame sms = dao.CreateNewGame();
+            sms.Name = "Super Mario Sisters";
+            sms.Price = 49.99;
+            sms.Producer = nentendo;
+            sms.GameTheme = GameTheme.Western;
+            dao.AddGame(sms);
 
-            IGame game2 = dao.CreateNewGame();
-            game2.Name = "game 2";
-            game2.Producer = producer1;
-            game2.GameTheme = GameTheme.Fantasy;
-            dao.AddGame(game2);
+            IGame sekiro = dao.CreateNewGame();
+            sekiro.Name = "Sekiro: Shadows Do Not Die At All";
+            sekiro.Price = 59.99;
+            sekiro.Producer = nentendo;
+            sekiro.GameTheme = GameTheme.Fantasy;
+            sekiro.GameType = GameType.Strategy;
+            dao.AddGame(sekiro);
 
+            IProducer cdp = dao.CreateNewProducer();
+            cdp.Name = "CD Projekt Green";
+            cdp.Country = "Poland";
+            dao.AddProducer(cdp);
 
-            IProducer producer2 = dao.CreateNewProducer();
-            producer2.Name = "producer 2";
-            dao.AddProducer(producer2);
+            IGame wiedzmin = dao.CreateNewGame();
+            wiedzmin.Name = "Der Hexer 3";
+            wiedzmin.Price = 5.00;
+            wiedzmin.Producer = cdp;
+            wiedzmin.GameTheme = GameTheme.Cyberpunk;
+            wiedzmin.GameType = GameType.Action;
+            dao.AddGame(wiedzmin);
 
-            IGame game3 = dao.CreateNewGame();
-            game3.Name = "game 3";
-            game3.Producer = producer2;
-            game3.GameTheme = GameTheme.Cyberpunk;
-            dao.AddGame(game3);
-
-            IGame game4 = dao.CreateNewGame();
-            game4.Name = "game 4";
-            game4.Producer = producer2;
-            game4.GameTheme = GameTheme.Medieval;
-            dao.AddGame(game4);
+            IGame cyberpunk = dao.CreateNewGame();
+            cyberpunk.Name = "Cyberpunk 2222";
+            cyberpunk.Producer = cdp;
+            cyberpunk.Price = 39.99;
+            cyberpunk.GameTheme = GameTheme.Medieval;
+            cyberpunk.GameType = GameType.FPS;
+            dao.AddGame(cyberpunk);
 
             dao.SaveChanges();
 
-
-
-            Console.WriteLine("** PRODUCERS ** \n");
+            Console.WriteLine("ALL PRODUCERS:");
             foreach (IProducer p in dao.GetAllProducers())
             {
-                Console.WriteLine($"{p.Id}: {p.Name}");
+                Console.WriteLine($"{p.Name}");
             }
 
-            Console.WriteLine("\n** gameS ** \n");
+            Console.WriteLine("\nALL GAMES:");
             foreach (IGame c in dao.GetAllGames())
             {
-                Console.WriteLine($"{c.Id}: {c.Name}, {c.Producer.Name}");
+                Console.WriteLine($"{c.Name}, {c.Producer.Name}");
             }
-
         }
     }
 }

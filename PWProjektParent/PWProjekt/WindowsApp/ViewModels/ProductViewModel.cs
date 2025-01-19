@@ -6,12 +6,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Milek_Nowak_WindowsApp.ViewModels
 {
-    public class BroomViewModel : INotifyPropertyChanged, INotifyDataErrorInfo
+    public class GameViewModel : INotifyPropertyChanged, INotifyDataErrorInfo
     {
         public event PropertyChangedEventHandler? PropertyChanged;
         
-        private IBroom _broom;
-        public IBroom Broom => _broom;
+        private IGame _game;
+        public IGame Game => _game;
 
         private void RaisePropertyChanged(string propertyName)
         {
@@ -38,10 +38,10 @@ namespace Milek_Nowak_WindowsApp.ViewModels
 
         public int Id
         {
-            get => _broom.Id;
+            get => _game.Id;
             set
             {
-                _broom.Id = value;
+                _game.Id = value;
                 RaisePropertyChanged(nameof(Id));
             }
         }
@@ -49,11 +49,11 @@ namespace Milek_Nowak_WindowsApp.ViewModels
         [StringLength(50, ErrorMessage = "Nazwa nie może być dłuższa niż 50 znaków")]
         public string Name
         {
-            get => _broom.Name;
+            get => _game.Name;
             set
             {
                 IsChanged = true;
-                _broom.Name = value;
+                _game.Name = value;
                 RaisePropertyChanged(nameof(Name));
             }
         }
@@ -61,52 +61,52 @@ namespace Milek_Nowak_WindowsApp.ViewModels
         [Range(0.01, double.MaxValue, ErrorMessage = "Cena musi być liczbą dodatnią.")]
         public double Price
         {
-            get => _broom.Price;
+            get => _game.Price;
             set
             {
                 IsChanged = true;
-                _broom.Price = Math.Round(value,2);
+                _game.Price = Math.Round(value,2);
                 RaisePropertyChanged(nameof(Price));
             }
         }
         [Required(ErrorMessage = "Producent jest wymagany")]
         public IProducer Producer
         {
-            get => _broom.Producer;
+            get => _game.Producer;
             set
             {
                 IsChanged = true;
-                _broom.Producer = value;
+                _game.Producer = value;
                 RaisePropertyChanged(nameof(Producer));
             }
         }
 
         [Required(ErrorMessage = "Materiał trzonka jest wymagany")]
-        public GameTheme HandleMaterial
+        public GameTheme GameTheme
         {
-            get => _broom.HandleMaterial;
+            get => _game.GameTheme;
             set
             {
                 IsChanged = true;
-                _broom.HandleMaterial = value;
-                RaisePropertyChanged(nameof(HandleMaterial));
+                _game.GameTheme = value;
+                RaisePropertyChanged(nameof(GameTheme));
             }
         }
         [Required(ErrorMessage = "Materiał włosia jest wymagany")]
-        public GameType FibersMaterial
+        public GameType GameType
         {
-            get => _broom.FibersMaterial;
+            get => _game.GameType;
             set
             {
                 IsChanged = true;
-                _broom.FibersMaterial = value;
-                RaisePropertyChanged(nameof(FibersMaterial));
+                _game.GameType = value;
+                RaisePropertyChanged(nameof(GameType));
             }
         }
 
-        public BroomViewModel(IBroom broom)
+        public GameViewModel(IGame game)
         {
-            _broom = broom;
+            _game = game;
             _isChanged = false;
         }
 

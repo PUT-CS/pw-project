@@ -3,9 +3,9 @@
     "",
     "\\PWProjektParent",
     "\\PWProjektParent\\PWProjekt",
-    "\\PWProjektParent\\PWProjekt\\ConsoleApp",
     "\\PWProjektParent\\PWProjekt\\DAOEF",
-    "\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations"
+    "\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations",
+    "\\PWProjektParent\\PWProjekt\\WindowsApp"
   ],
   "SelectedNode": "\\PWProjektParent\\PWProjekt\\DAOEF\\Migrations\\20250108201427_InitialMigration.cs",
   "PreviewInSolutionExplorer": false

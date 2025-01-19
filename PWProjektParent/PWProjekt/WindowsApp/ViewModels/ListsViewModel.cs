@@ -10,19 +10,19 @@ namespace Milek_Nowak_WindowsApp.ViewModels
     public class ListsViewModel: INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
-        private ListCollectionView _broomsView;
+        private ListCollectionView _gamesView;
         private ListCollectionView _producersView;
 
         private IDAO _dao;
 
-        private ObservableCollection<BroomViewModel> _broomsVm;
-        public ObservableCollection<BroomViewModel> BroomsVm
+        private ObservableCollection<GameViewModel> _gamesVm;
+        public ObservableCollection<GameViewModel> GamesVm
         {
-            get { return _broomsVm; }
+            get { return _gamesVm; }
             set
             {
-                _broomsVm = value;
-                RaisePropertyChanged(nameof(BroomsVm));
+                _gamesVm = value;
+                RaisePropertyChanged(nameof(GamesVm));
             }
         }
 
@@ -217,159 +217,159 @@ namespace Milek_Nowak_WindowsApp.ViewModels
 
         #endregion
 
-        #region broomList
+        #region gameList
 
-        private string _broomsFilter;
-        public string BroomsFilter
+        private string _gamesFilter;
+        public string GamesFilter
         {
-            get => _broomsFilter;
+            get => _gamesFilter;
             set
             {
-                _broomsFilter = value;
-                RaisePropertyChanged(nameof(BroomsFilter));
+                _gamesFilter = value;
+                RaisePropertyChanged(nameof(GamesFilter));
             }
         }
 
-        private BroomViewModel _selectedBroom;
-        public BroomViewModel SelectedBroom
+        private GameViewModel _selectedGame;
+        public GameViewModel SelectedGame
         {
-            get => _selectedBroom;
+            get => _selectedGame;
             set
             {
-                _selectedBroom = value;
-                if (CanAddNewBroom())
+                _selectedGame = value;
+                if (CanAddNewGame())
                 {
-                    EditedBroom = SelectedBroom;
+                    EditedGame = SelectedGame;
                 }                
-                RaisePropertyChanged(nameof(SelectedBroom));
+                RaisePropertyChanged(nameof(SelectedGame));
 
             }
         }
 
-        private BroomViewModel _editedBroom;
-        public BroomViewModel EditedBroom
+        private GameViewModel _editedGame;
+        public GameViewModel EditedGame
         {
-            get => _editedBroom;
+            get => _editedGame;
             set
             {
-                _editedBroom = value;
-                RaisePropertyChanged(nameof(EditedBroom));
+                _editedGame = value;
+                RaisePropertyChanged(nameof(EditedGame));
             }
         }
 
-        private void AddNewBroom()
+        private void AddNewGame()
         {
-            IBroom newBroom = _dao.CreateNewBroom();
-            BroomViewModel pvm = new BroomViewModel(newBroom);
-            EditedBroom = pvm;
-            EditedBroom.IsChanged = true;
-            SelectedBroom = null;
+            IGame newGame = _dao.CreateNewGame();
+            GameViewModel pvm = new GameViewModel(newGame);
+            EditedGame = pvm;
+            EditedGame.IsChanged = true;
+            SelectedGame = null;
         }
-        private bool CanAddNewBroom()
+        private bool CanAddNewGame()
         {
-            if ((EditedBroom == null) || (!EditedBroom.IsChanged)) 
+            if ((EditedGame == null) || (!EditedGame.IsChanged)) 
             { 
                 return true;
             }
             
             return false;
         }
-        private void SaveBroom()
+        private void SaveGame()
         {
-            if (EditedBroom.HasErrors)
+            if (EditedGame.HasErrors)
             {
                 return;
             }
-            if (EditedBroom.Id == 0)
+            if (EditedGame.Id == 0)
             {
-                BroomsVm.Add(EditedBroom);
-                _dao.AddBroom(EditedBroom.Broom);
+                GamesVm.Add(EditedGame);
+                _dao.AddGame(EditedGame.Game);
             }
-            EditedBroom.IsChanged = false;
+            EditedGame.IsChanged = false;
             _dao.SaveChanges();
-            EditedBroom = null;
+            EditedGame = null;
         }
-        private bool CanSaveBroom()
+        private bool CanSaveGame()
         {
-            if ((EditedBroom == null) || !EditedBroom.IsChanged)
+            if ((EditedGame == null) || !EditedGame.IsChanged)
             {
                 return false;
             }
-            return !EditedBroom.HasErrors;
+            return !EditedGame.HasErrors;
         }
-        private void DeleteBroom()
+        private void DeleteGame()
         {
-            _dao.RemoveBroom(EditedBroom.Broom);
+            _dao.RemoveGame(EditedGame.Game);
             _dao.SaveChanges();
 
-            BroomsVm.Remove(EditedBroom);
+            GamesVm.Remove(EditedGame);
 
-            SelectedBroom = null;
-            EditedBroom = null;
+            SelectedGame = null;
+            EditedGame = null;
         }
-        private bool CanDeleteBroom()
+        private bool CanDeleteGame()
         {
-            return EditedBroom != null;
+            return EditedGame != null;
         }
-        private void UndoBroomsChanges()
+        private void UndoGamesChanges()
         {
-            if (EditedBroom.Id != 0)
+            if (EditedGame.Id != 0)
             {
                 _dao.UndoChanges();
-                IBroom broom = _dao.GetAllBrooms().First(c => c.Id == EditedBroom.Id);
-                int index = BroomsVm.IndexOf(EditedBroom);
-                BroomsVm[index] = new BroomViewModel(broom);
+                IGame game = _dao.GetAllGames().First(c => c.Id == EditedGame.Id);
+                int index = GamesVm.IndexOf(EditedGame);
+                GamesVm[index] = new GameViewModel(game);
             }
-            EditedBroom = null;
+            EditedGame = null;
         }
-        private bool CanUndoBroomsChanges()
+        private bool CanUndoGamesChanges()
         {
-            if ((EditedBroom == null)) 
+            if ((EditedGame == null)) 
             {
                 return false; 
             }
             return true;
         }
-        private void FilterBroomsData()
+        private void FilterGamesData()
         {
-            if (string.IsNullOrEmpty(_broomsFilter))
+            if (string.IsNullOrEmpty(_gamesFilter))
             {
-                _broomsView.Filter = null;
+                _gamesView.Filter = null;
             }
             else
             {
-                _broomsView.Filter = p => ((BroomViewModel)p).Name.Contains(_broomsFilter);
+                _gamesView.Filter = p => ((GameViewModel)p).Name.Contains(_gamesFilter);
             }
         }
 
-        private RelayCommand _addNewBroomCommand;
-        public RelayCommand AddNewBroomCommand
+        private RelayCommand _addNewGameCommand;
+        public RelayCommand AddNewGameCommand
         {
-            get => _addNewBroomCommand;
+            get => _addNewGameCommand;
         }
 
-        private RelayCommand _saveBroomCommand;
-        public RelayCommand SaveBroomCommand
+        private RelayCommand _saveGameCommand;
+        public RelayCommand SaveGameCommand
         {
-            get => _saveBroomCommand;
+            get => _saveGameCommand;
         }
 
-        private RelayCommand _deleteBroomCommand;
-        public RelayCommand DeleteBroomCommand
+        private RelayCommand _deleteGameCommand;
+        public RelayCommand DeleteGameCommand
         {
-            get => _deleteBroomCommand;
+            get => _deleteGameCommand;
         }
 
-        private RelayCommand _filterBroomsDataCommand;
-        public RelayCommand FilterBroomsDataCommand
+        private RelayCommand _filterGamesDataCommand;
+        public RelayCommand FilterGamesDataCommand
         {
-            get => _filterBroomsDataCommand;
+            get => _filterGamesDataCommand;
         }
 
-        private RelayCommand _undoBroomsChangesCommand;
-        public RelayCommand UndoBroomsChangesCommand
+        private RelayCommand _undoGamesChangesCommand;
+        public RelayCommand UndoGamesChangesCommand
         {
-            get => _undoBroomsChangesCommand;
+            get => _undoGamesChangesCommand;
         }
 
         #endregion
@@ -382,7 +382,7 @@ namespace Milek_Nowak_WindowsApp.ViewModels
             _dao = Milek_Nowak_BLC.BLC.GetInstance(libraryName).DAO;
 
             _producersVm = new ObservableCollection<ProducerViewModel>();
-            _broomsVm = new ObservableCollection<BroomViewModel>();
+            _gamesVm = new ObservableCollection<GameViewModel>();
 
             _producers = new ObservableCollection<IProducer>(_dao.GetAllProducers());
 
@@ -391,9 +391,9 @@ namespace Milek_Nowak_WindowsApp.ViewModels
                 ProducersVm.Add(new ProducerViewModel(producer));
             }
 
-            foreach (var broom in _dao.GetAllBrooms())
+            foreach (var game in _dao.GetAllGames())
             {
-                BroomsVm.Add(new BroomViewModel(broom));
+                GamesVm.Add(new GameViewModel(game));
             }
 
             _producersView = (ListCollectionView)CollectionViewSource.GetDefaultView(_producersVm);
@@ -404,12 +404,12 @@ namespace Milek_Nowak_WindowsApp.ViewModels
             _undoProducersChangesCommand = new RelayCommand(param => UndoProducersChanges(), _ => CanUndoProducersChanges());
 
 
-            _broomsView = (ListCollectionView)CollectionViewSource.GetDefaultView(_broomsVm);
-            _addNewBroomCommand = new RelayCommand(_ => AddNewBroom(), _ => CanAddNewBroom());
-            _saveBroomCommand = new RelayCommand(_ => SaveBroom(), _ => CanSaveBroom());
-            _deleteBroomCommand = new RelayCommand(_ => DeleteBroom(), _ => CanDeleteBroom());
-            _filterBroomsDataCommand = new RelayCommand(param => FilterBroomsData());
-            _undoBroomsChangesCommand = new RelayCommand(param => UndoBroomsChanges(), _ => CanUndoBroomsChanges());
+            _gamesView = (ListCollectionView)CollectionViewSource.GetDefaultView(_gamesVm);
+            _addNewGameCommand = new RelayCommand(_ => AddNewGame(), _ => CanAddNewGame());
+            _saveGameCommand = new RelayCommand(_ => SaveGame(), _ => CanSaveGame());
+            _deleteGameCommand = new RelayCommand(_ => DeleteGame(), _ => CanDeleteGame());
+            _filterGamesDataCommand = new RelayCommand(param => FilterGamesData());
+            _undoGamesChangesCommand = new RelayCommand(param => UndoGamesChanges(), _ => CanUndoGamesChanges());
         }
     }
 }
