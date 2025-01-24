@@ -6,8 +6,9 @@
     "\\PWProjektParent\\PWProjekt\\WebApp",
     "\\PWProjektParent\\PWProjekt\\WebApp\\Controllers",
     "\\PWProjektParent\\PWProjekt\\WebApp\\Views",
-    "\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games"
+    "\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Games",
+    "\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Shared"
   ],
-  "SelectedNode": "\\PWProjektParent\\PWProjekt\\WebApp\\Controllers\\GamesController.cs",
+  "SelectedNode": "\\PWProjektParent\\PWProjekt\\WebApp\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }

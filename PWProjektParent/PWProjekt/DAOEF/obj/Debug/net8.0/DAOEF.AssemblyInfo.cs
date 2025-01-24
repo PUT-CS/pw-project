@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DAOEF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0da8b4947e74d3b48a50aa04bb5c0c870ea63127")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d01420eac63fd8561b3f51078af3ecdf859db6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DAOEF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DAOEF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

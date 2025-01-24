@@ -72,6 +72,9 @@ namespace Milek_Nowak_WebApp.Controllers
                 _dao.AddGame(game);
                 _dao.SaveChanges();
                 return RedirectToAction(nameof(Index));
+            } else
+            {
+                Console.WriteLine("Model nie jest walid!");
             }
             ViewData["Producers"] = new SelectList(_dao.GetAllProducers(), "Id", "Name");
             return View(game);

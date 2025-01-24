@@ -45,8 +45,8 @@ namespace Milek_Nowak_WindowsApp.ViewModels
                 RaisePropertyChanged(nameof(Id));
             }
         }
-        [Required(ErrorMessage = "Nazwa jest wymagana")]
-        [StringLength(50, ErrorMessage = "Nazwa nie może być dłuższa niż 50 znaków")]
+        [Required(ErrorMessage = "Name is required")]
+        [StringLength(50, ErrorMessage = "Name cannot be longer than 50 characters")]
         public string Name
         {
             get => _game.Name;
@@ -57,8 +57,8 @@ namespace Milek_Nowak_WindowsApp.ViewModels
                 RaisePropertyChanged(nameof(Name));
             }
         }
-        [Required(ErrorMessage = "Cena jest wymagana")]
-        [Range(0.01, double.MaxValue, ErrorMessage = "Cena musi być liczbą dodatnią.")]
+        [Required(ErrorMessage = "Price is required")]
+        [Range(0.01, double.MaxValue, ErrorMessage = "Price must be a positive number")]
         public double Price
         {
             get => _game.Price;
@@ -69,7 +69,7 @@ namespace Milek_Nowak_WindowsApp.ViewModels
                 RaisePropertyChanged(nameof(Price));
             }
         }
-        [Required(ErrorMessage = "Producent jest wymagany")]
+        [Required(ErrorMessage = "Producer is required")]
         public IProducer Producer
         {
             get => _game.Producer;
@@ -81,7 +81,7 @@ namespace Milek_Nowak_WindowsApp.ViewModels
             }
         }
 
-        [Required(ErrorMessage = "Materiał trzonka jest wymagany")]
+        [Required(ErrorMessage = "Game Theme is required")]
         public GameTheme GameTheme
         {
             get => _game.GameTheme;
@@ -92,7 +92,7 @@ namespace Milek_Nowak_WindowsApp.ViewModels
                 RaisePropertyChanged(nameof(GameTheme));
             }
         }
-        [Required(ErrorMessage = "Materiał włosia jest wymagany")]
+        [Required(ErrorMessage = "Game Type is required")]
         public GameType GameType
         {
             get => _game.GameType;
